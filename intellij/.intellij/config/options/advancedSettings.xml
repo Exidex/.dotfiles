@@ -3,7 +3,7 @@
     <option name="settings">
       <map>
         <entry key="confirm.rerun.with.termination" value="false" />
-        <entry key="gradle.download.sources" value="true" />
+        <entry key="ide.max.recent.projects" value="500" />
       </map>
     </option>
   </component>

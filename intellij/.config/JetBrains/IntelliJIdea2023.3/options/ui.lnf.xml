@@ -1,0 +1,10 @@
+<application>
+  <component name="UISettings">
+    <option name="HIDE_TOOL_STRIPES" value="true" />
+    <option name="NAVIGATION_BAR_LOCATION" value="TOP" />
+    <option name="OPEN_IN_PREVIEW_TAB_IF_POSSIBLE" value="true" />
+    <option name="REMEMBER_SIZE_FOR_EACH_TOOL_WINDOW_NEW_UI" value="true" />
+    <option name="SHOW_EDITOR_TOOLTIP" value="false" />
+    <option name="UI_DENSITY" value="COMPACT" />
+  </component>
+</application>

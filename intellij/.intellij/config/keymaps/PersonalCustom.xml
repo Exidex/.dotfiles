@@ -5,6 +5,7 @@
   <action id="ManageRecentProjects">
     <keyboard-shortcut first-keystroke="ctrl alt back_slash" />
   </action>
+  <action id="Markdown.Styling.CreateLink" />
   <action id="RunJsbtTask" />
   <action id="editRunConfigurations">
     <keyboard-shortcut first-keystroke="f10" />

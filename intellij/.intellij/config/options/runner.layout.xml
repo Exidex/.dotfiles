@@ -62,8 +62,18 @@
         <option name="minimizedInGrid" value="true" />
         <option name="placeInGrid" value="right" />
       </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="DEBUGGER_BACKEND_CONSOLE" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="2" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="DEBUGGER_MEMORY_VIEW" />
+        <option name="placeInGrid" value="center" />
+        <option name="tabIndex" value="3" />
+      </ViewImpl>
       <TabImpl>
-        <option name="leftProportion" value="0.19924407" />
+        <option name="leftProportion" value="0.19916579" />
         <option name="rightProportion" value="0.19978401" />
       </TabImpl>
       <TabImpl>
@@ -72,13 +82,23 @@
         <option name="index" value="1" />
       </TabImpl>
       <TabImpl>
-        <option name="defaultIndex" value="2" />
+        <option name="defaultIndex" value="4" />
         <option name="index" value="2" />
       </TabImpl>
       <TabImpl>
-        <option name="defaultIndex" value="3" />
+        <option name="defaultIndex" value="5" />
         <option name="index" value="3" />
       </TabImpl>
+    </runner>
+    <runner id="Session">
+      <ViewImpl>
+        <option name="ID" value="Input" />
+        <option name="placeInGrid" value="center" />
+      </ViewImpl>
+      <TabImpl />
+      <General>
+        <option name="isTabLabelsHidden" value="false" />
+      </General>
     </runner>
   </component>
 </application>

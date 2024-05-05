@@ -27,17 +27,21 @@
           "isShowStripeButton": false
         },
         {
+          "id": "DFA",
+          "isShowStripeButton": false
+        },
+        {
           "id": "Project",
           "order": 0,
           "contentUiType": "COMBO",
+          "isActiveOnStart": true,
+          "isVisible": true,
           "weight": 0.2721354,
           "sideWeight": 0.5005051
         },
         {
           "id": "Commit",
           "order": 1,
-          "isActiveOnStart": true,
-          "isVisible": true,
           "weight": 0.2721354
         },
         {
@@ -123,7 +127,8 @@
           "id": "Build",
           "order": 6,
           "anchor": "BOTTOM",
-          "weight": 0.27242368
+          "isAutoHide": true,
+          "weight": 0.36879772
         },
         {
           "id": "Debug",
@@ -132,9 +137,25 @@
           "weight": 0.45372137
         },
         {
+          "id": "Messages",
+          "order": 7,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "String Manipulation",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false
+        },
+        {
           "id": "Endpoints",
           "anchor": "RIGHT",
           "isShowStripeButton": false
+        },
+        {
+          "id": "make",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "isSplit": true
         },
         {
           "id": "documentation.v2",
@@ -181,6 +202,12 @@
           "isSplit": true
         },
         {
+          "id": "RustCargo",
+          "order": 6,
+          "anchor": "RIGHT",
+          "weight": 0.2
+        },
+        {
           "id": "Hierarchy",
           "order": 6,
           "anchor": "RIGHT",
@@ -190,7 +217,7 @@
       "unifiedWeights": {
         "top": 0.33,
         "left": 0.2721354,
-        "bottom": 0.65410304,
+        "bottom": 0.36879772,
         "right": 0.3127604
       }
     }

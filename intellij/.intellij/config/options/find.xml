@@ -9,9 +9,11 @@
     <mask>*.jsp</mask>
     <mask>*.properties</mask>
     <mask>*.java</mask>
-    <mask>*.js</mask>
     <mask>*.js,!*test.js,!*test.internal.js</mask>
-    <mask>*.toml</mask>
     <mask>*.toml,!*.lock</mask>
+    <mask>*.json,!package-lock.json</mask>
+    <mask>*.rs</mask>
+    <mask>*.toml</mask>
+    <mask>*.js</mask>
   </component>
 </application>

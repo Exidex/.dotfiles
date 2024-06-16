@@ -9,12 +9,6 @@
           "isShowStripeButton": false
         },
         {
-          "id": "Bookmarks",
-          "weight": 0.2721354,
-          "sideWeight": 0.49949497,
-          "isSplit": true
-        },
-        {
           "id": "Merge Requests",
           "isShowStripeButton": false
         },
@@ -34,19 +28,26 @@
           "id": "Project",
           "order": 0,
           "contentUiType": "COMBO",
-          "isActiveOnStart": true,
-          "isVisible": true,
-          "weight": 0.2721354,
-          "sideWeight": 0.5005051
+          "weight": 0.24192709,
+          "sideWeight": 0.50051653
         },
         {
           "id": "Commit",
           "order": 1,
-          "weight": 0.2721354
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.29453126,
+          "sideWeight": 0.50051653
+        },
+        {
+          "id": "Bookmarks",
+          "order": 2,
+          "weight": 0.2861979,
+          "isSplit": true
         },
         {
           "id": "Structure",
-          "order": 2,
+          "order": 3,
           "isAutoHide": true,
           "weight": 0.2721354,
           "sideWeight": 0.49949497,
@@ -78,17 +79,11 @@
           "isShowStripeButton": false
         },
         {
-          "id": "Find",
-          "anchor": "BOTTOM",
-          "isAutoHide": true,
-          "weight": 0.45372137
-        },
-        {
           "id": "Version Control",
           "order": 0,
           "anchor": "BOTTOM",
           "isAutoHide": true,
-          "weight": 0.45372137
+          "weight": 0.61402667
         },
         {
           "id": "Problems",
@@ -107,14 +102,14 @@
           "order": 3,
           "anchor": "BOTTOM",
           "isAutoHide": true,
-          "weight": 0.65410304
+          "weight": 0.39360687
         },
         {
           "id": "Run",
           "order": 4,
           "anchor": "BOTTOM",
           "isAutoHide": true,
-          "weight": 0.45372137
+          "weight": 0.5510496
         },
         {
           "id": "Services",
@@ -124,22 +119,30 @@
           "weight": 0.45372137
         },
         {
-          "id": "Build",
+          "id": "Debug",
           "order": 6,
           "anchor": "BOTTOM",
           "isAutoHide": true,
-          "weight": 0.36879772
-        },
-        {
-          "id": "Debug",
-          "order": 7,
-          "anchor": "BOTTOM",
-          "weight": 0.45372137
+          "weight": 0.46421754
         },
         {
           "id": "Messages",
           "order": 7,
           "anchor": "BOTTOM"
+        },
+        {
+          "id": "Build",
+          "order": 8,
+          "anchor": "BOTTOM",
+          "isAutoHide": true,
+          "weight": 0.33444655
+        },
+        {
+          "id": "Find",
+          "order": 9,
+          "anchor": "BOTTOM",
+          "isAutoHide": true,
+          "weight": 0.77051526
         },
         {
           "id": "String Manipulation",
@@ -153,12 +156,6 @@
         },
         {
           "id": "make",
-          "anchor": "RIGHT",
-          "isShowStripeButton": false,
-          "isSplit": true
-        },
-        {
-          "id": "documentation.v2",
           "anchor": "RIGHT",
           "isShowStripeButton": false,
           "isSplit": true
@@ -199,25 +196,34 @@
           "id": "Coverage",
           "order": 5,
           "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "weight": 0.32994792,
           "isSplit": true
         },
         {
           "id": "RustCargo",
           "order": 6,
           "anchor": "RIGHT",
-          "weight": 0.2
+          "weight": 0.20026042
         },
         {
           "id": "Hierarchy",
-          "order": 6,
+          "order": 7,
           "anchor": "RIGHT",
-          "weight": 0.11536458
+          "weight": 0.27161458
+        },
+        {
+          "id": "documentation.v2",
+          "order": 8,
+          "anchor": "RIGHT",
+          "weight": 0.32994792,
+          "isSplit": true
         }
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.2721354,
-        "bottom": 0.36879772,
+        "left": 0.29453126,
+        "bottom": 0.46421754,
         "right": 0.3127604
       }
     }

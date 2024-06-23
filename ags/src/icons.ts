@@ -13,8 +13,15 @@ export const substitutes = {
 }
 
 export default {
+    missing: "image-missing-symbolic",
+    nix: {
+        nix: "nix-snowflake-symbolic",
+    },
+    app: {
+        terminal: "terminal-symbolic",
+    },
     fallback: {
-        executable: "application-x-executable-symbolic",
+        executable: "application-x-executable",
         notification: "dialog-information-symbolic",
         video: "video-x-generic-symbolic",
         audio: "audio-x-generic-symbolic",
@@ -25,6 +32,7 @@ export default {
         info: "info-symbolic",
         link: "external-link-symbolic",
         lock: "system-lock-screen-symbolic",
+        screenshot: "screenshot-recorded-symbolic",
         menu: "open-menu-symbolic",
         refresh: "view-refresh-symbolic",
         search: "system-search-symbolic",
@@ -62,6 +70,11 @@ export default {
             card: "audio-card-symbolic",
         },
         mixer: "mixer-symbolic",
+    },
+    powerprofile: {
+        balanced: "power-profile-balanced-symbolic",
+        "power-saver": "power-profile-power-saver-symbolic",
+        performance: "power-profile-performance-symbolic",
     },
     asusctl: {
         profile: {

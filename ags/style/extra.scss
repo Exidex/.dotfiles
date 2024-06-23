@@ -3,6 +3,8 @@
 * {
   font-size: $font-size;
   //font-family: $font-name;
+  text-shadow: $text-shadow;
+  -gtk-icon-shadow: $text-shadow
 }
 
 separator {
@@ -28,11 +30,11 @@ window.popup {
     border: $border-width solid $popover-border-color;
 
     separator {
-      background-color: $border-color;
+      background-color: $widget-bg;
     }
 
     menuitem {
-      @include button($flat: true);
+      @include button;
       padding: $spacing * .5;
       margin: ($spacing * .5) 0;
 

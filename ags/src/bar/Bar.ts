@@ -1,7 +1,6 @@
 import Date from "./buttons/Date"
-import PowerMenu from "./buttons/PowerMenu"
 import SysTray from "./buttons/SysTray"
-import SystemIndicators from "./buttons/SystemIndicators"
+import QuickSettingsMenu from "./buttons/QuickSettingsMenu";
 
 export default (monitor: number) => Widget.Window({
     monitor,
@@ -27,8 +26,7 @@ export default (monitor: number) => Widget.Window({
             children: [
                 Widget.Box({ expand: true }),
                 SysTray(),
-                SystemIndicators(),
-                PowerMenu(),
+                QuickSettingsMenu(),
             ],
         }),
     }),

@@ -5,6 +5,8 @@ const bluetooth = await Service.import("bluetooth")
 const audio = await Service.import("audio")
 const network = await Service.import("network")
 
+const QUICK_SETTINGS_WINDOW_NAME = "quicksettings";
+
 const MicrophoneIndicator = () => Widget.Icon()
     .hook(audio, self => {
         return self.visible = (
@@ -18,19 +20,10 @@ const MicrophoneIndicator = () => Widget.Icon()
         self.icon = cons.find(([n]) => n <= vol * 100)?.[1] || ""
     })
 
-const BluetoothIndicator = () => Widget.Overlay({
+const BluetoothIndicator = () => Widget.Icon({
     class_name: "bluetooth",
-    passThrough: true,
-    child: Widget.Icon({
-        icon: icons.bluetooth.enabled,
-        visible: bluetooth.bind("enabled"),
-    }),
-    overlay: Widget.Label({
-        hpack: "end",
-        vpack: "start",
-        label: bluetooth.bind("connected_devices").as(c => `${c.length}`),
-        visible: bluetooth.bind("connected_devices").as(c => c.length > 0),
-    }),
+    icon: icons.bluetooth.enabled,
+    visible: bluetooth.bind("enabled"),
 })
 
 const NetworkIndicator = () => Widget.Icon().hook(network, self => {
@@ -48,12 +41,19 @@ const AudioIndicator = () => Widget.Icon({
     }),
 })
 
+const PowerIcon = () => Widget.Icon(icons.powermenu.shutdown)
+
 export default () => PanelButton({
-    on_clicked: () => App.toggleWindow("quicksettings"),
-    child: Widget.Box([
-        BluetoothIndicator(),
-        NetworkIndicator(),
-        AudioIndicator(),
-        MicrophoneIndicator(),
-    ]),
+    window: QUICK_SETTINGS_WINDOW_NAME,
+    on_clicked: () => App.toggleWindow(QUICK_SETTINGS_WINDOW_NAME),
+    child: Widget.Box({
+        children: [
+            NetworkIndicator(),
+            BluetoothIndicator(),
+            AudioIndicator(),
+            MicrophoneIndicator(),
+            PowerIcon(),
+        ],
+        homogeneous: true
+    }),
 })

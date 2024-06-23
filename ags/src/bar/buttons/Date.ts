@@ -1,10 +1,6 @@
 import PanelButton from "../PanelButton"
-import GLib from "gi://GLib";
 import PopupWindow from "../PopupWindow";
-
-const clock = Variable(GLib.DateTime.new_now_local(), {
-    poll: [1000, () => GLib.DateTime.new_now_local()],
-})
+import { clock } from "../../lib/variables";
 
 const DATE_MENU_WINDOW_NAME = "datemenu";
 

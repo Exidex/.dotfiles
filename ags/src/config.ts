@@ -1,12 +1,14 @@
 import Bar from "./bar/Bar";
+import { setupDateMenu } from "./bar/buttons/Date";
 
 App.config({
     windows: [Bar(0)],
-    style: './styles.css'
+    style: './style.css'
 })
 
-const cssPath = `${App.configDir}/styles.css`;
+const cssPath = `${App.configDir}/style.css`;
 
+setupDateMenu()
 
 Utils.monitorFile(
     cssPath,

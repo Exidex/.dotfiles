@@ -22,7 +22,7 @@ $button-hover-bg: rgba(255, 255, 255, 0.2);
 $button-hover-fg: $fg;
 
 $border-width: 1px;
-$border-color: transparentize(rgb(32, 196, 83), .96); // ??
+$border-color: transparentize($primary-bg, .1); // ??
 $border: $border-width solid $border-color;
 
 $active-gradient: linear-gradient(to right, $primary-bg, darken($primary-bg, 4%)); // ??
@@ -34,7 +34,7 @@ $popover-border-color: transparentize(rgb(32, 196, 83), .95); // ??
 $popover-padding: $padding;
 $popover-radius: $radius + $popover-padding;
 
-$font-size: 13px;
+$font-size: 15px;
 //$font-name: options.font.name,
 
 // etc

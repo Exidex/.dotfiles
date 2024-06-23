@@ -26,9 +26,9 @@ export default (monitor: number) => Widget.Window({
             hexpand: true,
             children: [
                 Widget.Box({ expand: true }),
-                // SysTray(),
-                // SystemIndicators(),
-                // PowerMenu(),
+                SysTray(),
+                SystemIndicators(),
+                PowerMenu(),
             ],
         }),
     }),

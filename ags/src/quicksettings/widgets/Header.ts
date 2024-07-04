@@ -33,6 +33,5 @@ export const Header = () => Widget.Box(
 
         },
     }),
-    SysButton("logout"),
     SysButton("shutdown"),
 )

@@ -1,6 +1,7 @@
 import { type BluetoothDevice } from "types/service/bluetooth"
 import { Menu, ArrowToggleButton } from "../ToggleButton"
 import icons from "../../icons";
+import { icon } from "../../lib/utils";
 
 const bluetooth = await Service.import("bluetooth")
 
@@ -23,7 +24,7 @@ export const BluetoothToggle = () => ArrowToggleButton({
 
 const DeviceItem = (device: BluetoothDevice) => Widget.Box({
     children: [
-        Widget.Icon(device.icon_name + "-symbolic"),
+        Widget.Icon(icon(device.icon_name + "-symbolic")),
         Widget.Label(device.name),
         Widget.Label({
             label: `${device.battery_percentage}%`,

@@ -12,7 +12,7 @@ const VolumeIndicator = (type: Type = "speaker") => Widget.Button({
     on_clicked: () => audio[type].is_muted = !audio[type].is_muted,
     child: Widget.Icon({
         icon: audio[type].bind("icon_name")
-            .as(i => icon(i || "", icons.audio.mic.high)),
+            .as(i => icon(i, icons.audio.mic.high)),
         tooltipText: audio[type].bind("volume")
             .as(vol => `Volume: ${Math.floor(vol * 100)}%`),
     }),
@@ -38,12 +38,7 @@ export const Volume = () => Widget.Box({
         VolumeSlider("speaker"),
         Widget.Box({
             vpack: "center",
-            child: Arrow("sink-selector"),
-        }),
-        Widget.Box({
-            vpack: "center",
-            child: Arrow("app-mixer"),
-            visible: audio.bind("apps").as(a => a.length > 0),
+            child: Arrow("volume-menu"),
         }),
     ],
 })
@@ -64,16 +59,12 @@ const MixerItem = (stream: Stream) => Widget.Box(
     },
     Widget.Icon({
         tooltip_text: stream.bind("name").as(n => n || ""),
-        icon: stream.bind("name").as(n => {
-            return Utils.lookUpIcon(n || "")
-                ? (n || "")
-                : icons.fallback.audio
-        }),
+        icon: stream.bind("name").as(n => icon(n, icons.fallback.audio)),
     }),
     Widget.Box(
         { vertical: true },
         Widget.Label({
-            xalign: 0,
+            xalign: 1,
             truncate: "end",
             max_width_chars: 28,
             label: stream.bind("description").as(d => d || ""),
@@ -122,7 +113,7 @@ const SettingsButton = () => Widget.Button({
 })
 
 export const AppMixer = () => Menu({
-    name: "app-mixer",
+    name: "volume-menu",
     icon: icons.audio.mixer,
     title: "App Mixer",
     content: [
@@ -137,7 +128,7 @@ export const AppMixer = () => Menu({
 })
 
 export const SinkSelector = () => Menu({
-    name: "sink-selector",
+    name: "volume-menu",
     icon: icons.audio.type.headset,
     title: "Sink Selector",
     content: [

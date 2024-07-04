@@ -1,12 +1,12 @@
 import { ArrowToggleButton, Menu } from "../ToggleButton"
 import icons from "../../icons";
-import { dependencies, sh } from "../../lib/utils";
+import { dependencies, icon, sh } from "../../lib/utils";
 
 const { wifi } = await Service.import("network")
 
 export const NetworkToggle = () => ArrowToggleButton({
     name: "network",
-    icon: wifi.bind("icon_name"),
+    icon: wifi.bind("icon_name").as(i => icon(i)),
     label: wifi.bind("ssid").as(ssid => ssid || "Not Connected"),
     connection: [wifi, () => wifi.enabled],
     deactivate: () => wifi.enabled = false,
@@ -18,7 +18,7 @@ export const NetworkToggle = () => ArrowToggleButton({
 
 export const WifiSelection = () => Menu({
     name: "network",
-    icon: wifi.bind("icon_name"),
+    icon: wifi.bind("icon_name").as(i => icon(i)),
     title: "Wifi Selection",
     content: [
         Widget.Box({
@@ -35,7 +35,7 @@ export const WifiSelection = () => Menu({
                         },
                         child: Widget.Box({
                             children: [
-                                Widget.Icon(ap.iconName),
+                                Widget.Icon(icon(ap.iconName || null)),
                                 Widget.Label(ap.ssid || ""),
                                 Widget.Icon({
                                     icon: icons.ui.tick,

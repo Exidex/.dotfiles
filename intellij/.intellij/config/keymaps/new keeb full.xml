@@ -531,7 +531,7 @@
     <keyboard-shortcut first-keystroke="ctrl f" />
   </action>
   <action id="FindInPath">
-    <keyboard-shortcut first-keystroke="shift ctrl r" />
+    <keyboard-shortcut first-keystroke="shift ctrl f" />
   </action>
   <action id="FindNext">
     <keyboard-shortcut first-keystroke="ctrl n" />
@@ -540,6 +540,7 @@
   <action id="FindPrevious">
     <keyboard-shortcut first-keystroke="shift ctrl n" />
   </action>
+  <action id="FindSelectionInPath" />
   <action id="FindUsages" />
   <action id="FindUsagesInFile" />
   <action id="FindWordAtCaret" />
@@ -596,13 +597,13 @@
   </action>
   <action id="GotoCustomRegion" />
   <action id="GotoDeclaration">
-    <keyboard-shortcut first-keystroke="shift ctrl f" />
+    <keyboard-shortcut first-keystroke="shift ctrl d" />
   </action>
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="shift ctrl w" />
   </action>
   <action id="GotoImplementation">
-    <keyboard-shortcut first-keystroke="shift ctrl d" />
+    <keyboard-shortcut first-keystroke="shift ctrl s" />
   </action>
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="shift ctrl a" />
@@ -620,7 +621,7 @@
   <action id="GotoSymbol" />
   <action id="GotoTest" />
   <action id="GotoTypeDeclaration">
-    <keyboard-shortcut first-keystroke="shift ctrl s" />
+    <keyboard-shortcut first-keystroke="shift ctrl t" />
   </action>
   <action id="Graph.RouteEdges" />
   <action id="HideActiveWindow" />
@@ -788,7 +789,7 @@
     <keyboard-shortcut first-keystroke="ctrl r" />
   </action>
   <action id="ReplaceInPath">
-    <keyboard-shortcut first-keystroke="shift ctrl t" />
+    <keyboard-shortcut first-keystroke="shift ctrl r" />
   </action>
   <action id="Rerun">
     <keyboard-shortcut first-keystroke="ctrl 5" />

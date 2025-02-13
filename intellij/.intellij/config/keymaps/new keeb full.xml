@@ -8,6 +8,9 @@
   <action id="$Delete">
     <keyboard-shortcut first-keystroke="delete" />
   </action>
+  <action id="$LRU">
+    <keyboard-shortcut first-keystroke="ctrl alt a" />
+  </action>
   <action id="$Paste">
     <keyboard-shortcut first-keystroke="ctrl v" />
   </action>
@@ -24,8 +27,11 @@
     <keyboard-shortcut first-keystroke="shift ctrl alt back_slash" />
   </action>
   <action id="ActivateBookmarksToolWindow" />
+  <action id="ActivateBuildToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl alt b" />
+  </action>
   <action id="ActivateCommitToolWindow">
-    <keyboard-shortcut first-keystroke="ctrl alt w" />
+    <keyboard-shortcut first-keystroke="ctrl alt e" />
   </action>
   <action id="ActivateDebugToolWindow">
     <keyboard-shortcut first-keystroke="ctrl alt t" />
@@ -36,7 +42,7 @@
   <action id="ActivateNuGetToolWindow" />
   <action id="ActivateProblemsViewToolWindow" />
   <action id="ActivateProjectToolWindow">
-    <keyboard-shortcut first-keystroke="ctrl alt e" />
+    <keyboard-shortcut first-keystroke="ctrl alt d" />
   </action>
   <action id="ActivateRunToolWindow">
     <keyboard-shortcut first-keystroke="ctrl alt r" />
@@ -47,7 +53,9 @@
     <keyboard-shortcut first-keystroke="ctrl alt f" />
   </action>
   <action id="ActivateUnitTestsToolWindow" />
-  <action id="ActivateVersionControlToolWindow" />
+  <action id="ActivateVersionControlToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl alt w" />
+  </action>
   <action id="Arrangement.Rule.Edit" />
   <action id="AutoIndentLines">
     <keyboard-shortcut first-keystroke="ctrl alt i" />
@@ -220,6 +228,9 @@
   </action>
   <action id="EditSourceInNewWindow">
     <keyboard-shortcut first-keystroke="shift f4" />
+  </action>
+  <action id="Editor LRU">
+    <keyboard-shortcut first-keystroke="ctrl alt a" />
   </action>
   <action id="EditorAddCaretPerSelectedLine" />
   <action id="EditorAddOrRemoveCaret">
@@ -585,13 +596,13 @@
   </action>
   <action id="GotoCustomRegion" />
   <action id="GotoDeclaration">
-    <keyboard-shortcut first-keystroke="shift ctrl d" />
+    <keyboard-shortcut first-keystroke="shift ctrl f" />
   </action>
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="shift ctrl w" />
   </action>
   <action id="GotoImplementation">
-    <keyboard-shortcut first-keystroke="shift ctrl s" />
+    <keyboard-shortcut first-keystroke="shift ctrl d" />
   </action>
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="shift ctrl a" />
@@ -609,7 +620,7 @@
   <action id="GotoSymbol" />
   <action id="GotoTest" />
   <action id="GotoTypeDeclaration">
-    <keyboard-shortcut first-keystroke="shift ctrl f" />
+    <keyboard-shortcut first-keystroke="shift ctrl s" />
   </action>
   <action id="Graph.RouteEdges" />
   <action id="HideActiveWindow" />
@@ -641,9 +652,6 @@
   <action id="Jdbc.OpenConsole.New" />
   <action id="JumpToLastChange">
     <keyboard-shortcut first-keystroke="shift ctrl back_space" />
-  </action>
-  <action id="JumpToLastWindow">
-    <keyboard-shortcut first-keystroke="ctrl alt d" />
   </action>
   <action id="MainMenuButton.ShowMenu">
     <keyboard-shortcut first-keystroke="alt back_slash" />
@@ -770,10 +778,12 @@
     <keyboard-shortcut first-keystroke="ctrl k" />
   </action>
   <action id="ReformatCode">
-    <keyboard-shortcut first-keystroke="shift alt l" />
+    <keyboard-shortcut first-keystroke="shift ctrl l" />
   </action>
   <action id="Refresh" />
-  <action id="RenameElement" />
+  <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="shift ctrl y" />
+  </action>
   <action id="Replace">
     <keyboard-shortcut first-keystroke="ctrl r" />
   </action>
@@ -861,7 +871,7 @@
   <action id="ServiceView.ShowServices" />
   <action id="ShelveChanges.UnshelveWithDialog" />
   <action id="ShelvedChanges.Rename">
-    <keyboard-shortcut first-keystroke="ctrl n" />
+    <keyboard-shortcut first-keystroke="shift ctrl y" />
   </action>
   <action id="ShowBookmarks" />
   <action id="ShowContent">
@@ -892,7 +902,7 @@
     <keyboard-shortcut first-keystroke="alt down" />
   </action>
   <action id="ShowSettings">
-    <keyboard-shortcut first-keystroke="ctrl alt released a" />
+    <keyboard-shortcut first-keystroke="ctrl alt slash" />
   </action>
   <action id="ShowSettingsAndFindUsages" />
   <action id="ShowTypeBookmarks" />

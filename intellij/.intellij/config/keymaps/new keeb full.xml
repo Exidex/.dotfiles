@@ -229,6 +229,9 @@
   <action id="EditSourceInNewWindow">
     <keyboard-shortcut first-keystroke="shift f4" />
   </action>
+  <action id="Editor Copy">
+    <keyboard-shortcut first-keystroke="ctrl c" />
+  </action>
   <action id="Editor LRU">
     <keyboard-shortcut first-keystroke="ctrl alt a" />
   </action>
@@ -259,9 +262,7 @@
   <action id="EditorCreateRectangularSelection" />
   <action id="EditorCreateRectangularSelectionOnMouseDrag" />
   <action id="EditorDecreaseFontSizeGlobal" />
-  <action id="EditorDeleteLine">
-    <keyboard-shortcut first-keystroke="ctrl y" />
-  </action>
+  <action id="EditorDeleteLine"/>
   <action id="EditorDeleteToWordEnd">
     <keyboard-shortcut first-keystroke="ctrl delete" />
   </action>
@@ -625,9 +626,7 @@
   </action>
   <action id="Graph.RouteEdges" />
   <action id="HideActiveWindow" />
-  <action id="HideAllWindows">
-    <keyboard-shortcut first-keystroke="ctrl alt s" />
-  </action>
+  <action id="HideAllWindows"/>
   <action id="HideSideWindows" />
   <action id="HighlightUsagesInFile" />
   <action id="HippieBackwardCompletion" />

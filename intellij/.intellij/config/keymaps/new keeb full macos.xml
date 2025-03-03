@@ -71,7 +71,7 @@
         <keyboard-shortcut first-keystroke="meta comma"/>
     </action>
     <action id="CWMHostShowPopupAction"/>
-  <action id="CallHierarchy"/>
+    <action id="CallHierarchy"/>
     <action id="CallInlineCompletionAction"/>
     <action id="ChangeSignature"/>
     <action id="ChangeTypeSignature">
@@ -97,7 +97,6 @@
         <keyboard-shortcut first-keystroke="f9"/>
     </action>
     <action id="ChooseRunConfiguration">
-        <keyboard-shortcut first-keystroke="f7"/>
         <keyboard-shortcut first-keystroke="f8"/>
     </action>
     <action id="ClassNameCompletion">
@@ -125,15 +124,15 @@
         <keyboard-shortcut first-keystroke="meta subtract"/>
         <keyboard-shortcut first-keystroke="meta minus"/>
     </action>
-  <action id="CollapseAllRegions"/>
+    <action id="CollapseAllRegions"/>
     <action id="CollapseBlock"/>
     <action id="CollapseExpandableComponent">
         <keyboard-shortcut first-keystroke="shift enter"/>
         <keyboard-shortcut first-keystroke="meta subtract"/>
         <keyboard-shortcut first-keystroke="meta minus"/>
     </action>
-  <action id="CollapseRegion"/>
-  <action id="CollapseRegionRecursively"/>
+    <action id="CollapseRegion"/>
+    <action id="CollapseRegionRecursively"/>
     <action id="CollapseSelection"/>
     <action id="CollapseTreeNode">
         <keyboard-shortcut first-keystroke="subtract"/>
@@ -262,7 +261,7 @@
     <action id="EditorCreateRectangularSelection"/>
     <action id="EditorCreateRectangularSelectionOnMouseDrag"/>
     <action id="EditorDecreaseFontSizeGlobal"/>
-  <action id="EditorDeleteLine"/>
+    <action id="EditorDeleteLine"/>
     <action id="EditorDeleteToWordEnd">
         <keyboard-shortcut first-keystroke="meta delete"/>
     </action>
@@ -455,8 +454,8 @@
     <action id="ExpandLiveTemplateByTab">
         <keyboard-shortcut first-keystroke="tab"/>
     </action>
-  <action id="ExpandRegion"/>
-  <action id="ExpandRegionRecursively"/>
+    <action id="ExpandRegion"/>
+    <action id="ExpandRegionRecursively"/>
     <action id="ExpandToLevel1">
         <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="1"/>
         <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="numpad1"/>
@@ -620,7 +619,7 @@
     <action id="HideActiveWindow">
         <keyboard-shortcut first-keystroke="shift escape"/>
     </action>
-  <action id="HideAllWindows"/>
+    <action id="HideAllWindows"/>
     <action id="HideSideWindows"/>
     <action id="HighlightUsagesInFile"/>
     <action id="HippieBackwardCompletion"/>
@@ -658,7 +657,7 @@
     <action id="MethodDown">
         <keyboard-shortcut first-keystroke="alt down"/>
     </action>
-  <action id="MethodHierarchy"/>
+    <action id="MethodHierarchy"/>
     <action id="MethodOverloadSwitchDown">
         <keyboard-shortcut first-keystroke="meta down"/>
     </action>
@@ -809,7 +808,7 @@
         <keyboard-shortcut first-keystroke="f5"/>
     </action>
     <action id="RunClass">
-        <keyboard-shortcut first-keystroke="shift meta f10"/>
+        <keyboard-shortcut first-keystroke="f10"/>
     </action>
     <action id="RunCoverage"/>
     <action id="RunInspection"/>
@@ -938,9 +937,7 @@
         <keyboard-shortcut first-keystroke="meta alt j"/>
     </action>
     <action id="SwitchCoverage"/>
-    <action id="SwitchHeaderSource">
-        <keyboard-shortcut first-keystroke="f10"/>
-    </action>
+    <action id="SwitchHeaderSource"/>
     <action id="Switcher"/>
     <action id="SwitcherIterateItems">
         <keyboard-shortcut first-keystroke="meta e"/>

@@ -508,9 +508,7 @@
     <keyboard-shortcut first-keystroke="ctrl 3"/>
   </action>
   <action id="FileChooser.GotoProject"/>
-  <action id="FileChooser.LightEditGotoOpenedFile">
-    <keyboard-shortcut first-keystroke="ctrl alt d"/>
-  </action>
+  <action id="FileChooser.LightEditGotoOpenedFile"/>
   <action id="FileChooser.NewFolder">
     <keyboard-shortcut first-keystroke="alt insert"/>
   </action>
@@ -556,7 +554,7 @@
   </action>
   <action id="FullyExpandTreeNode"/>
   <action id="Generate">
-    <keyboard-shortcut first-keystroke="alt insert"/>
+    <keyboard-shortcut first-keystroke="ctrl alt o"/>
   </action>
   <action id="Git.CreateNewBranch">
     <keyboard-shortcut first-keystroke="ctrl alt n"/>
@@ -616,10 +614,10 @@
     <keyboard-shortcut first-keystroke="shift ctrl t"/>
   </action>
   <action id="Graph.RouteEdges"/>
-  <action id="HideActiveWindow">
+  <action id="HideAllWindows">
     <keyboard-shortcut first-keystroke="shift escape"/>
   </action>
-  <action id="HideAllWindows"/>
+  <action id="HideActiveWindow"/>
   <action id="HideSideWindows"/>
   <action id="HighlightUsagesInFile"/>
   <action id="HippieBackwardCompletion"/>
@@ -718,8 +716,11 @@
   <action id="OpenInRightSplit">
     <keyboard-shortcut first-keystroke="shift enter"/>
   </action>
+  <action id="OpenMinimapSettings">
+    <keyboard-shortcut first-keystroke="ctrl alt slash"/>
+  </action>
   <action id="OptimizeImports">
-    <keyboard-shortcut first-keystroke="ctrl alt o"/>
+    <keyboard-shortcut first-keystroke="shift ctrl i"/>
   </action>
   <action id="OverrideMethods">
     <keyboard-shortcut first-keystroke="shift ctrl o"/>
@@ -851,7 +852,7 @@
   </action>
   <action id="SelectIn"/>
   <action id="SelectInProjectView">
-    <keyboard-shortcut first-keystroke="ctrl alt d"/>
+    <keyboard-shortcut first-keystroke="ctrl alt s"/>
   </action>
   <action id="SelectNextOccurrence">
     <keyboard-shortcut first-keystroke="alt j"/>
@@ -868,12 +869,14 @@
   <action id="ShelvedChanges.Rename">
     <keyboard-shortcut first-keystroke="shift ctrl y"/>
   </action>
-  <action id="ShowBookmarks"/>
+  <action id="ShowBookmarks">
+    <keyboard-shortcut first-keystroke="f12"/>
+  </action>
   <action id="ShowContent">
     <keyboard-shortcut first-keystroke="alt down"/>
   </action>
   <action id="ShowErrorDescription">
-    <keyboard-shortcut first-keystroke="shift ctrl i"/>
+    <keyboard-shortcut first-keystroke="ctrl alt u"/>
   </action>
   <action id="ShowExecutionPoint">
     <keyboard-shortcut first-keystroke="alt f10"/>
@@ -897,9 +900,7 @@
   <action id="ShowSearchHistory">
     <keyboard-shortcut first-keystroke="alt down"/>
   </action>
-  <action id="ShowSettings">
-    <keyboard-shortcut first-keystroke="ctrl alt slash"/>
-  </action>
+  <action id="ShowSettings"/>
   <action id="ShowSettingsAndFindUsages"/>
   <action id="ShowTypeBookmarks"/>
   <action id="ShowUsages"/>
@@ -1002,9 +1003,7 @@
   </action>
   <action id="UsageGrouping.DirectoryStructure"/>
   <action id="UsageGrouping.FileStructure"/>
-  <action id="UsageGrouping.FlattenModules">
-    <keyboard-shortcut first-keystroke="ctrl alt o"/>
-  </action>
+  <action id="UsageGrouping.FlattenModules"/>
   <action id="UsageGrouping.Module">
     <keyboard-shortcut first-keystroke="ctrl alt m"/>
   </action>

@@ -73,9 +73,7 @@
     <action id="BraceOrQuoteOut">
         <keyboard-shortcut first-keystroke="tab"/>
     </action>
-    <action id="BuildProject">
-        <keyboard-shortcut first-keystroke="meta comma"/>
-    </action>
+    <action id="BuildProject"/>
     <action id="CWMHostShowPopupAction"/>
     <action id="CallHierarchy"/>
     <action id="CallInlineCompletionAction"/>
@@ -524,9 +522,7 @@
     <action id="Forward">
         <keyboard-shortcut first-keystroke="meta close_bracket"/>
     </action>
-    <action id="FullyExpandTreeNode">
-        <keyboard-shortcut first-keystroke="shift meta equals"/>
-    </action>
+    <action id="FullyExpandTreeNode"/>
     <action id="Generate">
         <keyboard-shortcut first-keystroke="meta alt o"/>
     </action>
@@ -676,7 +672,7 @@
         <keyboard-shortcut first-keystroke="tab"/>
     </action>
     <action id="NextProjectWindow">
-        <keyboard-shortcut first-keystroke="meta alt right"/>
+        <keyboard-shortcut first-keystroke="shift meta close_bracket"/>
     </action>
     <action id="NextSplitter">
         <keyboard-shortcut first-keystroke="shift meta quote"/>
@@ -719,7 +715,7 @@
         <keyboard-shortcut first-keystroke="meta alt up"/>
     </action>
     <action id="PreviousProjectWindow">
-        <keyboard-shortcut first-keystroke="meta alt left"/>
+        <keyboard-shortcut first-keystroke="shift meta open_bracket"/>
     </action>
     <action id="PreviousTab">
         <keyboard-shortcut first-keystroke="shift ctrl tab"/>

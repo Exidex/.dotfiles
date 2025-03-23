@@ -42,6 +42,9 @@
     <action id="ActivateHierarchyToolWindow"/>
     <action id="ActivateNuGetToolWindow"/>
     <action id="ActivateProblemsViewToolWindow"/>
+    <action id="ActivateProjectToolWindow">
+        <keyboard-shortcut first-keystroke="meta alt s"/>
+    </action>
     <action id="ActivatePullRequestsToolWindow">
         <keyboard-shortcut first-keystroke="meta alt c"/>
     </action>
@@ -56,6 +59,9 @@
     <action id="ActivateUnitTestsToolWindow"/>
     <action id="ActivateVersionControlToolWindow">
         <keyboard-shortcut first-keystroke="meta alt w"/>
+    </action>
+    <action id="Annotate">
+        <keyboard-shortcut first-keystroke="meta alt comma"/>
     </action>
     <action id="Arrangement.Rule.Edit"/>
     <action id="AutoIndentLines">
@@ -149,11 +155,9 @@
     <action id="CompareTwoFiles">
         <keyboard-shortcut first-keystroke="meta d"/>
     </action>
-    <action id="Compile">
-        <keyboard-shortcut first-keystroke="shift meta f9"/>
-    </action>
+    <action id="Compile"/>
     <action id="CompileDirty">
-        <keyboard-shortcut first-keystroke="meta 9"/>
+        <keyboard-shortcut first-keystroke="f10"/>
     </action>
     <action id="Console.Execute">
         <keyboard-shortcut first-keystroke="enter"/>
@@ -426,26 +430,11 @@
         <keyboard-shortcut first-keystroke="meta add"/>
         <keyboard-shortcut first-keystroke="meta equals"/>
     </action>
-    <action id="ExpandAllToLevel1">
-        <keyboard-shortcut first-keystroke="shift meta multiply" second-keystroke="1"/>
-        <keyboard-shortcut first-keystroke="shift meta multiply" second-keystroke="numpad1"/>
-    </action>
-    <action id="ExpandAllToLevel2">
-        <keyboard-shortcut first-keystroke="shift meta multiply" second-keystroke="2"/>
-        <keyboard-shortcut first-keystroke="shift meta multiply" second-keystroke="numpad2"/>
-    </action>
-    <action id="ExpandAllToLevel3">
-        <keyboard-shortcut first-keystroke="shift meta multiply" second-keystroke="3"/>
-        <keyboard-shortcut first-keystroke="shift meta multiply" second-keystroke="numpad3"/>
-    </action>
-    <action id="ExpandAllToLevel4">
-        <keyboard-shortcut first-keystroke="shift meta multiply" second-keystroke="4"/>
-        <keyboard-shortcut first-keystroke="shift meta multiply" second-keystroke="numpad4"/>
-    </action>
-    <action id="ExpandAllToLevel5">
-        <keyboard-shortcut first-keystroke="shift meta multiply" second-keystroke="5"/>
-        <keyboard-shortcut first-keystroke="shift meta multiply" second-keystroke="numpad5"/>
-    </action>
+    <action id="ExpandAllToLevel1"/>
+    <action id="ExpandAllToLevel2"/>
+    <action id="ExpandAllToLevel3"/>
+    <action id="ExpandAllToLevel4"/>
+    <action id="ExpandAllToLevel5"/>
     <action id="ExpandExpandableComponent">
         <keyboard-shortcut first-keystroke="shift enter"/>
         <keyboard-shortcut first-keystroke="meta add"/>
@@ -456,29 +445,12 @@
     </action>
     <action id="ExpandRegion"/>
     <action id="ExpandRegionRecursively"/>
-    <action id="ExpandToLevel1">
-        <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="1"/>
-        <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="numpad1"/>
-    </action>
-    <action id="ExpandToLevel2">
-        <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="2"/>
-        <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="numpad2"/>
-    </action>
-    <action id="ExpandToLevel3">
-        <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="3"/>
-        <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="numpad3"/>
-    </action>
-    <action id="ExpandToLevel4">
-        <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="4"/>
-        <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="numpad4"/>
-    </action>
-    <action id="ExpandToLevel5">
-        <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="5"/>
-        <keyboard-shortcut first-keystroke="meta multiply" second-keystroke="numpad5"/>
-    </action>
-    <action id="ExpandTreeNode">
-        <keyboard-shortcut first-keystroke="add"/>
-    </action>
+    <action id="ExpandToLevel1"/>
+    <action id="ExpandToLevel2"/>
+    <action id="ExpandToLevel3"/>
+    <action id="ExpandToLevel4"/>
+    <action id="ExpandToLevel5"/>
+    <action id="ExpandTreeNode"/>
     <action id="ExportToTextFile">
         <keyboard-shortcut first-keystroke="alt o"/>
     </action>
@@ -552,13 +524,13 @@
     <action id="Forward">
         <keyboard-shortcut first-keystroke="meta close_bracket"/>
     </action>
-    <action id="FullyExpandTreeNode"/>
+    <action id="FullyExpandTreeNode">
+        <keyboard-shortcut first-keystroke="shift meta equals"/>
+    </action>
     <action id="Generate">
         <keyboard-shortcut first-keystroke="meta alt o"/>
     </action>
-    <action id="Git.CreateNewBranch">
-        <keyboard-shortcut first-keystroke="meta alt n"/>
-    </action>
+    <action id="Git.CreateNewBranch"/>
     <action id="Git.New.Branch.In.Log">
         <keyboard-shortcut first-keystroke="meta alt n"/>
     </action>
@@ -706,6 +678,9 @@
     <action id="NextProjectWindow">
         <keyboard-shortcut first-keystroke="meta alt right"/>
     </action>
+    <action id="NextSplitter">
+        <keyboard-shortcut first-keystroke="shift meta quote"/>
+    </action>
     <action id="NextTab">
         <keyboard-shortcut first-keystroke="ctrl tab"/>
     </action>
@@ -809,7 +784,7 @@
         <keyboard-shortcut first-keystroke="f5"/>
     </action>
     <action id="RunClass">
-        <keyboard-shortcut first-keystroke="f10"/>
+        <keyboard-shortcut first-keystroke="f3"/>
     </action>
     <action id="RunCoverage"/>
     <action id="RunInspection"/>
@@ -852,7 +827,7 @@
     </action>
     <action id="SelectIn"/>
     <action id="SelectInProjectView">
-        <keyboard-shortcut first-keystroke="meta alt s"/>
+        <keyboard-shortcut first-keystroke="meta alt d"/>
     </action>
     <action id="SelectNextOccurrence">
         <keyboard-shortcut first-keystroke="alt j"/>
@@ -927,7 +902,9 @@
     <action id="StepInto"/>
     <action id="StepOut"/>
     <action id="StepOver"/>
-    <action id="Stop"/>
+    <action id="Stop">
+        <keyboard-shortcut first-keystroke="f7"/>
+    </action>
     <action id="StopBackgroundProcesses"/>
     <action id="StructuralSearchPlugin.StructuralReplaceAction"/>
     <action id="StructuralSearchPlugin.StructuralSearchAction"/>
@@ -1019,7 +996,7 @@
     </action>
     <action id="Vcs.Push"/>
     <action id="Vcs.QuickListPopupAction">
-        <keyboard-shortcut first-keystroke="alt back_quote"/>
+        <keyboard-shortcut first-keystroke="meta alt period"/>
     </action>
     <action id="Vcs.RollbackChangedLines">
         <keyboard-shortcut first-keystroke="meta alt z"/>
@@ -1030,6 +1007,9 @@
     </action>
     <action id="Vcs.UpdateProject"/>
     <action id="VcsHistory.ShowAllAffected"/>
+    <action id="VcsShowCurrentChangeMarker">
+        <keyboard-shortcut first-keystroke="meta alt y"/>
+    </action>
     <action id="VcsShowNextChangeMarker">
         <keyboard-shortcut first-keystroke="shift meta alt down"/>
     </action>

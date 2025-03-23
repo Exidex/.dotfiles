@@ -671,9 +671,7 @@
     <action id="NextParameter">
         <keyboard-shortcut first-keystroke="tab"/>
     </action>
-    <action id="NextProjectWindow">
-        <keyboard-shortcut first-keystroke="shift ctrl close_bracket"/>
-    </action>
+    <action id="NextProjectWindow"/>
     <action id="NextSplitter">
         <keyboard-shortcut first-keystroke="shift ctrl quote"/>
     </action>
@@ -714,9 +712,7 @@
     <action id="PreviousOccurence">
         <keyboard-shortcut first-keystroke="ctrl alt up"/>
     </action>
-    <action id="PreviousProjectWindow">
-        <keyboard-shortcut first-keystroke="shift ctrl open_bracket"/>
-    </action>
+    <action id="PreviousProjectWindow"/>
     <action id="PreviousTab">
         <keyboard-shortcut first-keystroke="shift ctrl tab"/>
     </action>
